@@ -9,6 +9,8 @@ import { ProfileComponent } from './folder/profile/profile.component';
 export const routes: Routes = [
     { path: '', redirectTo: 'login', pathMatch: 'full' },
     { path: 'login', loadComponent: () => import('./folder/loginpage/loginpage.component').then(c => c.LoginpageComponent) },
+    // { path: 'login', loadComponent: () => import('./folder/topnavbar/topnavbar.component').then(c => c.TopnavbarComponent) },
+
     { path: 'profile', component:ProfileComponent},
     { path: 'Topnavbar', component: TopnavbarComponent },
     { path: 'second', component: SecondnavbarComponent },
