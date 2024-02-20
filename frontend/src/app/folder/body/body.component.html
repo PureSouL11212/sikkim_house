@@ -43,14 +43,39 @@
           <button (click)="proceed()">Proceed</button>
         </div> -->
 
-        <div class="booking-box">
+        <!-- <div class="booking-box">
           <div *ngFor="let room of availableRooms" class="room-info">
             <img [src]="room.image" alt="Room Image" />
             <p>Date: {{ room.date }}</p>
             <p>Day: {{ room.day }}</p>
           </div>
           <button (click)="proceed()">Proceed</button>
+        </div> -->
+
+
+        <!-- <div class="booking-box">
+          <div class="image-container">
+            <div *ngFor="let room of availableRooms" class="room-info">
+              <img [src]="room.image" alt="Room Image" />
+              <p>Date: {{ room.date }}</p>
+              <p>Day: {{ room.day }}</p>
+            </div>
+          </div>
+          <button (click)="proceed()">Proceed</button>
+        </div> -->
+
+
+        <div class="booking-box">
+          <div class="image-container">
+            <div *ngFor="let room of availableRooms" class="room-info">
+              <img [src]="room.image" alt="Room Image" />
+              <p>Date: {{ room.date }}</p>
+              <p>Day: {{ room.day }}</p>
+            </div>
+          </div>
+          <button (click)="proceed()">Proceed</button>
         </div>
+        
       </div>
     </div>
     <br />

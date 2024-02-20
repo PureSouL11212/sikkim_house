@@ -10,11 +10,11 @@ import { CommonModule } from '@angular/common';
 export class BodyComponent {
   
   availableRooms = [
-    { image: 'assets/image/bg.jpg', date: '2024-02-19', day: 'Monday' },
-    { image: 'path_to_image_2.jpg', date: '2024-02-20', day: 'Tuesday' },
-    { image: 'path_to_image_3.jpg', date: '2024-02-21', day: 'Wednesday' },
-    { image: 'path_to_image_4.jpg', date: '2024-02-22', day: 'Thursday' },
-    { image: 'path_to_image_5.jpg', date: '2024-02-23', day: 'Friday' }
+    { image: 'assets/image/imae2.jpeg', date: '2024-02-19', day: 'Monday' },
+    { image: 'assets/image/image3.webp', date: '2024-02-20', day: 'Tuesday' },
+    { image: 'assets/image/image4.jpeg', date: '2024-02-21', day: 'Wednesday' },
+    { image: 'assets/image/room1.jpg', date: '2024-02-22', day: 'Thursday' },
+    { image: 'assets/image/image5.webp', date: '2024-02-23', day: 'Friday' }
   ];
 
   proceed() {
