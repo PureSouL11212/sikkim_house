@@ -27,7 +27,11 @@
           border-radius: 50px;
           display: inline-block;
         ">
-        <div class="booking-box">
+
+        <!-- hotel image section -->
+
+
+        <!-- <div class="booking-box">
           <p>Date: {{ currentDate }}</p>
           <div class="image-section">
             <img src="path_to_your_image.jpg" alt="Image Section" />
@@ -36,6 +40,15 @@
           <ul>
             <li ngFor="let room of availableRooms">{{ room }}</li>
           </ul>
+          <button (click)="proceed()">Proceed</button>
+        </div> -->
+
+        <div class="booking-box">
+          <div *ngFor="let room of availableRooms" class="room-info">
+            <img [src]="room.image" alt="Room Image" />
+            <p>Date: {{ room.date }}</p>
+            <p>Day: {{ room.day }}</p>
+          </div>
           <button (click)="proceed()">Proceed</button>
         </div>
       </div>

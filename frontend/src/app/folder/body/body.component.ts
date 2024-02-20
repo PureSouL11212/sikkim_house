@@ -1,29 +1,23 @@
 import { Component,Input } from '@angular/core';
-
+import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-body',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './body.component.html',
   styleUrl: './body.component.css'
 })
 export class BodyComponent {
-  room: string; 
-  @Input() dateInfo: any; 
   
-  constructor() {
-    this.room = "example room";
-    
-  }
-  currentDate: string = new Date().toDateString(); 
-  availableRooms: number[] = [10, 12, 15, 14, 11, 13, 16]; 
+  availableRooms = [
+    { image: 'assets/image/bg.jpg', date: '2024-02-19', day: 'Monday' },
+    { image: 'path_to_image_2.jpg', date: '2024-02-20', day: 'Tuesday' },
+    { image: 'path_to_image_3.jpg', date: '2024-02-21', day: 'Wednesday' },
+    { image: 'path_to_image_4.jpg', date: '2024-02-22', day: 'Thursday' },
+    { image: 'path_to_image_5.jpg', date: '2024-02-23', day: 'Friday' }
+  ];
 
   proceed() {
-    // Add your logic for the proceed action here
+    // Your proceed function logic here
   }
-  weekDaysInfo = [
-    { date: new Date(2014, 8, 28), availableRooms: [{ name: 'Room 1' }, { name: 'Room 2' }] },
-    { date: new Date(/* set date for Monday */), availableRooms: [{ name: 'Room 3' }, { name: 'Room 4' }] },
-    // Add objects for the rest of the week
-  ];
 }
