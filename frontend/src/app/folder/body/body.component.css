@@ -250,7 +250,7 @@ button:hover {
 }
 
 .room-info {
-  flex: 0 0 calc(13.33% - 20px); /* Adjust as needed */
+  flex: 0 0 calc(19.33% - 20px); /* Adjust as needed */
   margin: 10px;
   padding: 10px;
   text-align: center;
