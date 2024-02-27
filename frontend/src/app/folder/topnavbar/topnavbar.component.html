@@ -27,13 +27,14 @@
       <input type="checkbox" id="toggle" class="navbar-toggle">
       <label for="toggle" class="navbar-button">Options</label>
       <div class="navbar-dropdown">
-        <button (click)='logout()'class="navbar-button">Logout</button>
-        <button class="navbar-button">Change Password</button>
-        
+        <button (click)='logout()'class="navbar-button">Sign In</button>
+        <button class="navbar-button">
+          <a href="loginpage" style="text-decoration: none;color:white"> Login</a> 
+         </button>
       </div>
     </div>
   </div>
-</nav>
+</nav>                                        
 <app-burger></app-burger>
 <app-mainhomepage></app-mainhomepage>
 <app-fotter></app-fotter>

@@ -85,7 +85,7 @@ button {
 .bk:hover {
   background-color: rgb(161, 239, 219); /* Change background color on hover */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25); /* Enhance box shadow on hover */
-  transform: scale(1.05); /* Slight zoom-in effect */
+  transform: scale(1.02); /* Slight zoom-in effect */
 }
 
 .bk:hover .booking-period-title {
@@ -209,9 +209,11 @@ button:hover {
   /* transform: translateY(-50%) */
 }
 
+
+
 .other-services-box:hover {
   transform: scale(1.04);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 20px rgba(255, 0, 0, 0.2);
   background-color: rgb(161, 239, 219);
 }
 
@@ -229,4 +231,34 @@ button:hover {
   padding: 10px 20px;
  
   text-align: center;
+}
+
+
+
+/* image section */
+.booking-box {
+  text-align: center;
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+  padding: 0 10px; /* Adjust as needed */
+  box-sizing: border-box;
+}
+
+.room-info {
+  flex: 0 0 calc(19.33% - 20px); /* Adjust as needed */
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.room-info img {
+  max-width: 100%;
+  height: auto;
 }
